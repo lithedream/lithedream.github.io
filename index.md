@@ -2,8 +2,6 @@
 title: lithedream
 ---
 
-# lithedream
-
 I build software with a craftsman’s bias: clarity over noise, tools over theater.
 
 **Primary identity:** Java staff software engineer
@@ -15,9 +13,3 @@ I build software with a craftsman’s bias: clarity over noise, tools over theat
 
 - GitHub: https://github.com/lithedream
 - LinkedIn: https://www.linkedin.com/in/luca-amadori-codepunk
-
----
-
-<small>
-© lithedream • built with GitHub Pages
-</small>
