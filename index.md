@@ -4,7 +4,7 @@ title: lithedream
 
 I build software with a craftsman’s bias: clarity over noise, tools over theater.
 
-**Primary identity:** Java staff software engineer
+**Primary identity:** Java staff software engineer  
 **Exploring:** agents, prompts, small “sharp” libraries that earn trust
 
 ---
