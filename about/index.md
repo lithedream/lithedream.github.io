@@ -2,8 +2,6 @@
 title: About
 ---
 
-## About
-
 I’m a software engineer with a long memory.
 
 I’ve spent most of my professional life building and maintaining **real systems**: large Java backends, ERP modules, databases that actually matter, code that has to survive years.
