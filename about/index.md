@@ -42,7 +42,7 @@ Just artifacts.
 
 You can find me on:
 - GitHub: [github.com/lithedream](https://github.com/lithedream)
-- LinkedIn: [linkedin.com/in/luca-amadori-codepunk] (https://www.linkedin.com/in/luca-amadori-codepunk)
+- LinkedIn: [linkedin.com/in/luca-amadori-codepunk](https://www.linkedin.com/in/luca-amadori-codepunk)
 
 ---
 
