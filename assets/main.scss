@@ -197,49 +197,33 @@ blockquote {
   text-shadow: 0 0 18px var(--glow-m);
 }
 
+
+
 /* =========================================
-   Mobile / vertical nav dropdown (Minima)
+   Header navigation — single-color solution
+   Magenta by default, readable everywhere
    ========================================= */
 
-/* The dropdown panel/background */
-.site-nav {
-  background-color: transparent;
-}
-
-/* Minima uses a light background for the dropdown; override it */
-.site-nav .trigger {
-  background-color: var(--bg-soft);
-  border: 1px solid var(--border);
-  box-shadow:
-    0 12px 30px rgba(0, 0, 0, 0.45),
-    0 0 24px var(--glow-c);
-  border-radius: 14px;
-  padding: 0.5rem 0.75rem;
-}
-
-/* Links inside dropdown: readable + neon on hover */
-.site-nav .trigger .page-link {
-  display: block;
-  color: var(--fg) !important;
-  opacity: 0.95;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 0.35rem 0;
-}
-
-.site-nav .trigger .page-link:last-child {
-  border-bottom: none;
-}
-
-.site-nav .trigger .page-link:hover,
-.site-nav .trigger .page-link:focus {
-  color: var(--cyan) !important;
-  text-shadow: 0 0 16px var(--glow-c);
-  border-bottom-color: rgba(45, 246, 255, 0.25);
-}
-
-/* Active/current page in dropdown */
-.site-nav .trigger .page-link.active,
-.site-nav .trigger .page-link[aria-current="page"] {
+/* All header nav links, both desktop and mobile */
+.site-nav .page-link {
   color: var(--magenta) !important;
+  opacity: 0.95;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 79, 216, 0.35);
+}
+
+/* Hover / focus: cyan energy */
+.site-nav .page-link:hover,
+.site-nav .page-link:focus {
+  color: var(--cyan) !important;
+  border-bottom-color: rgba(45, 246, 255, 0.55);
+  text-shadow: 0 0 14px var(--glow-c);
+}
+
+/* Current / active page */
+.site-nav .page-link.active,
+.site-nav .page-link[aria-current="page"] {
+  color: var(--magenta) !important;
+  border-bottom-color: rgba(255, 79, 216, 0.75);
   text-shadow: 0 0 18px var(--glow-m);
 }
