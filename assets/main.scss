@@ -161,35 +161,6 @@ blockquote {
 }
 
 /* =========================================
-   Header nav (Minima wide-screen menu)
-   ========================================= */
-
-.site-nav .page-link {
-  color: var(--fg) !important;
-  opacity: 0.92;
-  border-bottom: 1px solid rgba(45, 246, 255, 0.25);
-  padding: 0.15rem 0;
-}
-
-.site-nav .page-link:hover,
-.site-nav .page-link:focus {
-  color: var(--cyan) !important;
-  border-bottom-color: rgba(255, 79, 216, 0.55);
-  text-decoration: none;
-  text-shadow: 0 0 16px var(--glow-c);
-}
-
-/* Current page highlight (so it’s readable, not “only after click”) */
-.site-nav .page-link.active,
-.site-nav .page-link[aria-current="page"] {
-  color: var(--magenta) !important;
-  border-bottom-color: rgba(255, 79, 216, 0.75);
-  text-shadow: 0 0 18px var(--glow-m);
-}
-
-
-
-/* =========================================
    Header navigation — single-color solution
    Magenta by default, readable everywhere
    ========================================= */
@@ -199,22 +170,58 @@ blockquote {
   color: var(--magenta) !important;
   opacity: 0.95;
   text-decoration: none;
-  border-bottom: 1px solid rgba(255, 79, 216, 0.35);
+  position: relative;
+  display: inline-block;
+  line-height: 1.25;
+  padding-bottom: 0.2rem;
+}
+
+.site-nav .page-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: rgba(255, 79, 216, 0.35);
+  transition: opacity 180ms ease, box-shadow 180ms ease;
 }
 
 /* Hover / focus: cyan energy */
 .site-nav .page-link:hover,
 .site-nav .page-link:focus {
   color: var(--cyan) !important;
-  border-bottom-color: rgba(45, 246, 255, 0.55);
   text-shadow: 0 0 14px var(--glow-c);
+}
+
+.site-nav .page-link:hover::after,
+.site-nav .page-link:focus::after {
+  background: rgba(45, 246, 255, 0.55);
+  box-shadow: 0 0 12px var(--glow-c);
 }
 
 /* Current / active page */
 .site-nav .page-link.active,
 .site-nav .page-link[aria-current="page"] {
   color: var(--magenta) !important;
-  border-bottom-color: rgba(255, 79, 216, 0.75);
   text-shadow: 0 0 18px var(--glow-m);
 }
 
+.site-nav .page-link.active::after,
+.site-nav .page-link[aria-current="page"]::after {
+  background: rgba(255, 79, 216, 0.75);
+  box-shadow: 0 0 12px var(--glow-m);
+}
+
+@media (max-width: 600px) {
+  .site-nav .page-link {
+    text-shadow: none;
+  }
+
+  .site-nav .page-link:hover::after,
+  .site-nav .page-link:focus::after,
+  .site-nav .page-link.active::after,
+  .site-nav .page-link[aria-current="page"]::after {
+    box-shadow: none;
+  }
+}
