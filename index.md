@@ -1,5 +1,5 @@
 ---
-title: lithedream
+title: Home
 ---
 
 I build software with a craftsman’s bias: clarity over noise, tools over theater.
