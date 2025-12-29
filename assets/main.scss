@@ -227,3 +227,25 @@ blockquote {
   border-bottom-color: rgba(255, 79, 216, 0.75);
   text-shadow: 0 0 18px var(--glow-m);
 }
+
+/* =========================================
+   Fix: gradient divider overlapping hamburger/menu
+   ========================================= */
+
+/* Ensure header/nav sits above page-content decorations */
+.site-header {
+  position: relative;
+  z-index: 10;
+}
+
+.site-nav {
+  position: relative;
+  z-index: 11;
+}
+
+/* Keep the gradient line behind and non-interactive */
+.page-content::before {
+  position: relative;
+  z-index: 0;
+  pointer-events: none;
+}
