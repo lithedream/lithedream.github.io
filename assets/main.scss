@@ -106,16 +106,6 @@ pre {
   border-image: linear-gradient(90deg, var(--cyan), var(--magenta), var(--purple)) 1;
 }
 
-/* A synthwave gradient divider for content */
-.page-content::before {
-  content: "";
-  display: block;
-  height: 2px;
-  margin: 0.5rem 0 1.5rem 0;
-  background: linear-gradient(90deg, var(--cyan), var(--magenta), var(--purple));
-  opacity: 0.75;
-}
-
 /* Links: more “alive” even when not hovered */
 a {
   text-decoration: none;
