@@ -11,5 +11,5 @@ I build software with a craftsman’s bias: clarity over noise, tools over theat
 
 ## Links
 
-- GitHub: https://github.com/lithedream
-- LinkedIn: https://www.linkedin.com/in/luca-amadori-codepunk
+- GitHub: [github.com/lithedream](https://github.com/lithedream)
+- LinkedIn: [linkedin.com/in/luca-amadori-codepunk](https://www.linkedin.com/in/luca-amadori-codepunk)
