@@ -36,6 +36,7 @@ body { background-color: var(--bg); color: var(--fg); }
 }
 
 .site-title { color: var(--cyan); }
+.site-title:visited { color: var(--cyan); }
 .site-title:hover { color: var(--magenta); }
 
 h1, h2, h3 { color: var(--purple); }
