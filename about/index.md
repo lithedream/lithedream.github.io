@@ -50,4 +50,4 @@ You can find me on:
 
 ---
 
-Last updated when it needed to be.{: .post-meta }
+_Last updated when it needed to be._{: .post-meta }
