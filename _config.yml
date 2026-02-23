@@ -3,3 +3,7 @@ description: software, agents, precision, resonance
 markdown: kramdown
 theme: minima
 show_excerpts: false
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
