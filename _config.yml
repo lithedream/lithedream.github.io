@@ -3,6 +3,13 @@ description: software, agents, precision, resonance
 markdown: kramdown
 theme: minima
 show_excerpts: false
+github_username: lithedream
+linkedin_username: luca-amadori-codepunk
+header_pages:
+  - index.md
+  - about.md
+  - projects.md
+  - guides.md
 collections:
   projects:
     output: true
