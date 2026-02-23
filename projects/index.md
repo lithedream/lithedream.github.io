@@ -1,12 +1,11 @@
 ---
 layout: page
-title: Guides
-permalink: /guides/
+title: Projects
+permalink: /projects/
 ---
 
-{% assign items = site.guides | sort: "title" %}
-{% for g in items %}
+{% for p in site.projects %}
 
-- [{{ g.title }}]({{ g.url }}){% if g.summary %} — {{ g.summary }}{% endif %}
+- [{{ p.title }}]({{ p.url }}) — {{ p.kind }} · {{ p.status }}
 
 {% endfor %}
