@@ -7,9 +7,9 @@ github_username: lithedream
 linkedin_username: luca-amadori-codepunk
 header_pages:
   - index.md
-  - /about/about.md
-  - /projects/projects.md
-  - /guides/guides.md
+  - /about/index.md
+  - /projects/index.md
+  - /guides/index.md
 collections:
   projects:
     output: true
